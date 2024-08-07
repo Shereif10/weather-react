@@ -5,9 +5,176 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  list-style: none;
+}
+
+
+
+.parent{
+  min-height: 100vh !important;
+  display: grid !important;
+  grid-template-rows: auto 1fr auto !important;
+}
+
+.navbar img {
+  width: 64px !important;
+}
+
+.navbar h1 {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: white;
+  margin-bottom: 6px !important;
+}
+
+.navbar p {
+  font-size: 10px !important;
+  color: #bfc1c8 !important;
+
+}
+
+.navbar {
+  background-color: #1E202B !important;
+  position: sticky !important;
+}
+
+.navbar-collapse ul li a {
+  color: white !important;
+}
+
+.nav-item:hover a {
+  color: #009AD8 !important;
+}
+
+.active {
+  color: #009AD8 !important;
+}
+
+.navbar-nav .active a {
+  color: #009AD8 !important;
+  border: 1px solid;
+  border-radius: 20px;
+}
+
+.navbar-nav a:hover {
+  color: #009AD8 !important;
+  border: 1px solid;
+  border-radius: 20px;
+}
+
+.navbar-nav a {
+  font-size: 16px !important;
+  font-weight: 500;
+  line-height: 10px !important;
+}
+
+.container {
+  width: 75% !important;
+}
+
+/* ---------------- */
+
+header input::placeholder,
+#email::placeholder {
+  color: #757575 !important;
+}
+
+footer {
+  background-color: #262936;
+}
+
+#Subscribe {
+  background-color: #009AD8;
+  border-color: #009AD8;
+  position: absolute;
+  top: 7px;
+  right: 10px;
+}
+
+footer p {
+  color: #bfc1c8;
+  font-size: 13px;
+}
+
+#email {
+
+  background-color: #1E202B;
+  border-color: #1E202B;
+}
+
+.footer-list a {
+  font-size: 16px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #1E202B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.footer-list a:hover {
+  background-color: #009AD8;
+  color: white;
+}
+
+/* --------------------- */
+
+header {
+  background-image: url('./assets/images/banner.png');
+  width: 100%;
+  background-repeat: no-repeat;
+  /* height: calc(100vh-50px); */
+  background-color: #1E202B;
+}
+
+header .btn {
+  top: 5px !important;
+  bottom: 5px !important;
+  right: 13% !important;
+}
+
+header input {
+  background-color: #1E202B !important;
+  border: none !important;
+  color: white !important;
+}
+
+.card{
+  background-color: #323544;
+  color: #8E8F94
+}
+
+.degree-one{
+  font-size: 90px;
+  font-weight: 700;
+}
+
+.cardUp{
+  background-color: #2D303D;
+}
+
+.condition-text{
+  color: #0470D5;
+}
+
+.secondCardUp{
+  background-color: #222530;
+}
+
+.second{
+  background-color: #262936;
 }
